@@ -30,9 +30,13 @@ header{
 }
 img{
     max-width: 100%;
+    display: block;
 }
 section{
     background-color: #141922;
+}
+ul{
+    list-style-type: none;
 }
 .main{
     height:calc(100vh - 200px);
@@ -159,6 +163,15 @@ justify-content: center;
 .main-col{
 padding: 10px 10px;
 }
+.gallery{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.col-gallery{
+    flex-basis: 50%;
+    padding: 20px 10px;
+}
 /* Utilitis */
 .flex{
     display: flex;
@@ -242,6 +255,39 @@ padding: 10px 10px;
 .light-gray{
     color: #6F6F6F;
 }
+.point{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color:#fff;
+    position: relative;
+    left: 94%;
+    top: -3px;
+    display: none;
+}
+/* Hover */
+a:hover {
+    color: #fff;
+}
+i:hover{
+    color: #fff;
+}
+footer .col-footer a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+.w-bar:hover .white-bar{
+ background-color: lightgreen;
+}
+.w-bar:hover .point{
+    display: block;
+}
+.volume:hover .white-volume{
+    background-color: lightgreen;
+}
+.volume:hover .point{
+    display: block;
+}
 /* MediaQuery */
 @media screen and (min-width:576px){
     .block{
@@ -283,11 +329,17 @@ padding: 10px 10px;
     .inline{
         display: inline;
     }
+    .col-gallery{
+        flex-basis: 25%;
+    }
 }
 @media screen and (min-width:992px) {
     .icons-inline{
         display: inline;
         padding: 0 5px;
+    }
+    .col-gallery{
+        flex-basis:calc(100% / 6);
     }
 }
 @media screen and (min-width:1200px) {
