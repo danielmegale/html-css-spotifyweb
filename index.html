@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300&family=Fredoka:wght@400;500;600;700&family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -12,7 +13,7 @@
     <nav class="border"><!--sidebar-->
         <div class="border navbar row">
             <div class="col">
-                <div class="padding-icons block">
+                <div class="padding-icons block w-img">
                         <a href=""><img class="icon" src="img/logo.svg" alt=""></a>
                 </div>
                 <div class="padding-icons none">
@@ -41,10 +42,10 @@
                 <div class="block padding-icons icon gray"> <!--Playlist-->
                         <b>PLAYLIST</b>
                         <div class="flex icon center">
-                            <div class="plus">
-                                <a class="black" href="">+</a>
+                            <div class="">
+                                <a class="plus" href="">+</a>
                             </div>
-                            <span class="padding9">Crea Playlist</span>
+                            <a href=""><span class="padding9">Crea Playlist</span></a>
                         </div>
                         <div class="over-playlist">
                             <a class="padding-bot" href="">Nome Playlist</a>
@@ -111,20 +112,43 @@
     </main>
     <footer class="border f-sticky">
         <div class="border f-flex">
-            <div class="border flex">
-                <div>
-                    <img src="img/sinister.jpeg" alt="">
+            <div class="border flex space-between col-footer padding10 center">
+                <div class="flex center">
+                    <div class="f-play">
+                        <img src="img/sinister.jpeg" alt="">
+                    </div>
+                    <div class="padding9">
+                        <h4>Sinister</h4>
+                        <a href="">Brano</a>
+                        <a href="">Nome</a>
+                    </div>
                 </div>
-                <div>
-                    <b>Sinister</b>
+                <div class="light-gray">
+                    <div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-folder"></i>
+                    </div>
                 </div>
-                <div></div>
             </div>
-            <div class="border">
-                <div></div>
-                <div></div>
+            <div class="border col-footer flex column padding10 space-between center">
+                <div class="white">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-sharp fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="flex center w-bar">
+                    <p>0:25 </p>
+                    <div class="play-bar">
+                        <div class="white-bar"></div>
+                    </div>
+                    <p> 4:35</p>
+                </div>
             </div>
-            <div class="border">
+            <div class="border col-footer flex ">
                 <div></div>
             </div>
         </div>
