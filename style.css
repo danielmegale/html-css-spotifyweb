@@ -113,7 +113,7 @@ a{
 .button{
     display: inline-block;
     background-color: #000;
-    padding: 37px 10px;
+    padding: 37px 20px;
 }
 .btn{
     border: 2px solid white;
@@ -154,6 +154,11 @@ a{
     background-color: #fff;
     border-radius: 3px;
 }
+.greenbar{
+    width: 100px;
+    height: 3px;
+    background-color: lightgreen;
+}
 /* Main */
 .row{
 width:100%;
@@ -171,6 +176,16 @@ padding: 10px 10px;
 .col-gallery{
     flex-basis: 50%;
     padding: 20px 10px;
+}
+.opacity{
+    position: relative;
+}
+.play{
+    position: absolute;
+    top:50%;
+    font-size: 40px;
+    transform: translate(-50%,-50%);
+    display: none;
 }
 /* Utilitis */
 .flex{
@@ -288,6 +303,19 @@ footer .col-footer a:hover{
 .volume:hover .point{
     display: block;
 }
+.col-gallery:hover img{
+    filter: opacity(0.2
+    );
+}
+.col-gallery:hover .play{
+    display:inline-block;
+}
+footer .fa-circle-play:hover{
+   transform: scale(1.2);
+}
+.button:hover{
+    transform: scale(1.1);
+}
 /* MediaQuery */
 @media screen and (min-width:576px){
     .block{
@@ -338,10 +366,9 @@ footer .col-footer a:hover{
         display: inline;
         padding: 0 5px;
     }
+}
+@media screen and (min-width:1200px) {
     .col-gallery{
         flex-basis:calc(100% / 6);
     }
-}
-@media screen and (min-width:1200px) {
-    
 }
